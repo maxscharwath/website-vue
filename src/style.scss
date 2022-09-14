@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-background px-5 sm:px-10 overflow-x-hidden leading-relaxed;
+    counter-reset: section-counter tab-counter;
+}
+
+::selection {
+    @apply text-white bg-primary;
+}
+
+::-webkit-scrollbar {
+    @apply w-1.5 h-1.5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply bg-primary/30  rounded-full;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/75
+}
