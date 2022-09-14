@@ -38,3 +38,5 @@ declare module "*.md" {
     VueComponentWith,
   };
 }
+
+ const GITVERSION:string
