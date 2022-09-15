@@ -12,7 +12,7 @@ const navLinks = [
 
 <template>
   <header
-    class="bg-background/75 fixed bottom-0 left-0 z-10 flex h-24 w-full justify-center backdrop-blur transition duration-300 ease-out sm:top-0 sm:h-16 sm:justify-end [&.unhooked]:shadow-[0_0_20px_3px_rgba(0,0,0,0.5)]"
+    class="bg-background/75 fixed bottom-0 left-0 z-10 flex h-24 w-full justify-center backdrop-blur transition duration-300 ease-out print:hidden sm:top-0 sm:h-16 sm:justify-end [&.unhooked]:shadow-[0_0_20px_3px_rgba(0,0,0,0.5)]"
     :class="{ unhooked: y > 0 }"
   >
     <nav class="flex">

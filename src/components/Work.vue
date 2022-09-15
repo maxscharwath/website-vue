@@ -2,6 +2,7 @@
 import Section from "./core/Section.vue";
 import SectionTitle from "./core/SectionTitle.vue";
 import highlights from "../assets/highlights";
+import Markdown from "@/components/core/Markdown.vue";
 </script>
 
 <template>
@@ -34,13 +35,13 @@ import highlights from "../assets/highlights";
           <p
             class="bg-background-light/90 my-3 rounded-lg p-5 pl-10 text-right text-blue-200 shadow-lg backdrop-blur-sm"
           >
-            <component :is="highlight.content.VueComponent" />
+            <Markdown :component="highlight.content.VueComponent" />
           </p>
-          <ul class="mb-3 flex">
+          <ul class="mb-3">
             <li
               v-for="technology in highlight.content.attributes.technologies"
               :key="technology"
-              class="text-primary mx-2 font-mono text-sm"
+              class="text-primary mx-2 inline-block font-mono text-sm"
             >
               {{ technology }}
             </li>

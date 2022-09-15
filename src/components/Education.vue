@@ -3,6 +3,7 @@ import Section from "./core/Section.vue";
 import SectionTitle from "./core/SectionTitle.vue";
 import educations from "../assets/educations";
 import SelectTab from "./core/SelectTab.vue";
+import Markdown from "@/components/core/Markdown.vue";
 </script>
 
 <template>
@@ -25,21 +26,11 @@ import SelectTab from "./core/SelectTab.vue";
             {{ item.attributes.location }}
           </span>
           <article class="mt-4">
-            <component :is="item.VueComponent" />
+            <Markdown :component="item.VueComponent" />
           </article>
         </div>
       </template>
     </SelectTab>
   </Section>
 </template>
-<style lang="scss" scoped>
-::v-deep(ul) {
-  li {
-    @apply mb-3 relative pl-6;
-    &:before {
-      @apply text-primary mr-2 absolute left-0;
-      content: "⎊";
-    }
-  }
-}
-</style>
+<style lang="scss" scoped></style>
