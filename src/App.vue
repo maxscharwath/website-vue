@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Hero from "./components/Hero.vue";
-import About from "./components/About.vue";
-import Education from "./components/Education.vue";
-import Contact from "./components/Contact.vue";
-import Footer from "./components/Footer.vue";
-import Work from "./components/Work.vue";
-import Navbar from "./components/Navbar.vue";
+import Hero from "@/components/Hero.vue";
+import About from "@/components/About.vue";
+import Education from "@/components/Education.vue";
+import Contact from "@/components/Contact.vue";
+import Footer from "@/components/Footer.vue";
+import Work from "@/components/Work.vue";
+import Navbar from "@/components/Navbar.vue";
 import { useHead } from "@vueuse/head";
 
 useHead({

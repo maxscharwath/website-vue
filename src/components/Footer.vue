@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SocialBar from "./SocialBar.vue";
+import SocialBar from "@/components/SocialBar.vue";
 const gitRevision = GITVERSION;
 </script>
 

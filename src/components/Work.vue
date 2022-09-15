@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Section from "./core/Section.vue";
-import SectionTitle from "./core/SectionTitle.vue";
-import highlights from "../assets/highlights";
+import Section from "@/components/core/Section.vue";
+import SectionTitle from "@/components/core/SectionTitle.vue";
 import Markdown from "@/components/core/Markdown.vue";
+import highlights from "@/assets/highlights";
 </script>
 
 <template>

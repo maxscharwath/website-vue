@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Section from "./core/Section.vue";
-import SectionTitle from "./core/SectionTitle.vue";
-import Btn from "./core/Btn.vue";
+import Section from "@/components/core/Section.vue";
+import SectionTitle from "@/components/core/SectionTitle.vue";
+import Btn from "@/components/core/Btn.vue";
 </script>
 
 <template>

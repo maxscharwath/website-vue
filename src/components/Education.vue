@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Section from "./core/Section.vue";
-import SectionTitle from "./core/SectionTitle.vue";
-import educations from "../assets/educations";
-import SelectTab from "./core/SelectTab.vue";
+import Section from "@/components/core/Section.vue";
+import SectionTitle from "@/components/core/SectionTitle.vue";
+import SelectTab from "@/components/core/SelectTab.vue";
 import Markdown from "@/components/core/Markdown.vue";
+import educations from "@/assets/educations";
 </script>
 
 <template>
