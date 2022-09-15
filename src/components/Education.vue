@@ -18,9 +18,12 @@ import SelectTab from "./core/SelectTab.vue";
             item.attributes.title
           }}</span>
           <span class="text-sm text-blue-300">{{ item.attributes.range }}</span>
-          <span class="text-sm text-blue-300">{{
-            item.attributes.location
+          <span class="text-primary font-mono text-sm">{{
+            item.attributes.degree
           }}</span>
+          <span class="text-sm text-blue-300">
+            {{ item.attributes.location }}
+          </span>
           <article class="mt-4">
             <component :is="item.VueComponent" />
           </article>

@@ -1,5 +1,6 @@
-import * as A01 from "./baccalaureat.md";
-import * as A02 from "./mct.md";
-import * as A03 from "./heig.md";
+import * as bac from "./baccalaureat.md";
+import * as newzealand from "./newzealand.md";
+import * as mct from "./mct.md";
+import * as heig from "./heig.md";
 
-export default [A01, A02, A03];
+export default [bac, newzealand, mct, heig];
