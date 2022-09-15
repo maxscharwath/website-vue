@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-background px-5 sm:px-10 overflow-x-hidden leading-relaxed;
+    @apply bg-background px-5 sm:px-10 overflow-x-hidden leading-relaxed pb-14 sm:pb-0;
     counter-reset: section-counter tab-counter;
 }
 
