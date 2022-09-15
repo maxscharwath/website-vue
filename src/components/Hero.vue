@@ -29,9 +29,9 @@ import Btn from "./core/Btn.vue";
       Building cool stuff.
     </div>
     <p v-motion-slide-top :delay="400" class="mt-4 max-w-md text-blue-300">
-      I'm a software engineer based in Lausanne, Switzerland. I specialize in
-      building (and occasionally designing) exceptional websites, applications,
-      and everything in between.
+      Hello there! I’m Maxime, a software engineer based in Lausanne,
+      Switzerland. I enjoy building things, hacking stuff and learning new
+      things.
     </p>
     <div v-motion-slide-top :delay="500" class="mt-8">
       <Btn as="a" href="#contact"> Get In Touch </Btn>

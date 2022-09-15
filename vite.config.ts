@@ -14,4 +14,9 @@ export default defineConfig({
     }),
     GitRevisionPlugin({}),
   ],
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+  },
 });

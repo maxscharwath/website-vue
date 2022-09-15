@@ -10,8 +10,8 @@ import Section from "./core/Section.vue";
       <div class="mb-10 w-fit md:mr-10">
         <p class="pb-4">
           Hello there! I’m Maxime, a software engineer based in Lausanne,
-          Switzerland. I specialize in building (and occasionally designing)
-          exceptional websites, applications, and everything in between.
+          Switzerland. I enjoy building things, hacking stuff and learning new
+          things.
         </p>
         <p class="pb-4">
           My passion for programming started back in 2009, and more than a
@@ -32,16 +32,24 @@ import Section from "./core/Section.vue";
       </div>
       <div class="group mx-auto max-w-xs md:mx-0">
         <div class="relative w-full overflow-hidden rounded-lg bg-blue-200">
-          <img
-            src="src/assets/background.png"
-            alt=""
-            class="absolute h-full w-full scale-105 blur-sm grayscale transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:blur group-hover:grayscale-0"
-          />
-          <img
-            src="src/assets/me.png"
-            alt=""
-            class="scale-100 grayscale transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:grayscale-0"
-          />
+          <div
+            class="grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0"
+          >
+            <img
+              src="@/assets/background.png"
+              alt=""
+              class="absolute h-full w-full scale-105 blur-sm transition-all duration-500 ease-in-out group-hover:scale-110"
+            />
+            <img
+              src="@/assets/me.png"
+              alt=""
+              class="scale-100 transition-all duration-500 ease-in-out group-hover:scale-110"
+            />
+          </div>
+
+          <div
+            class="absolute inset-0 h-full w-full bg-blue-500 opacity-25 transition-all duration-500 ease-in-out group-hover:opacity-0"
+          ></div>
         </div>
       </div>
     </div>

@@ -8,14 +8,19 @@ const socials = ref([
     icon: "github",
   },
   {
-    name: "Twitter",
-    link: "https://twitter.com/maxscharwath",
-    icon: "twitter",
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/maximescharwath/",
+    icon: "linkedin",
   },
   {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/maxscharwath/",
-    icon: "linkedin",
+    name: "NPM",
+    link: "https://www.npmjs.com/~maxscharwath",
+    icon: "code",
+  },
+  {
+    name: "Twitter",
+    link: "https://twitter.com/maximescharwath",
+    icon: "twitter",
   },
   {
     name: "Instagram",

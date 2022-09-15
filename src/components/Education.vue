@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import Section from "./core/Section.vue";
 import SectionTitle from "./core/SectionTitle.vue";
-import * as educations from "../assets/educations";
+import educations from "../assets/educations";
 import SelectTab from "./core/SelectTab.vue";
-const educationsList = Object.values(educations);
 </script>
 
 <template>
   <Section class="text-blue-300">
     <SectionTitle>Education</SectionTitle>
-    <SelectTab :list="educationsList">
+    <SelectTab :list="educations">
       <template #tab="{ item }">
         {{ item.attributes.title }}
       </template>

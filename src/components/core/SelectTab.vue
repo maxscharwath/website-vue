@@ -2,14 +2,14 @@
 import { ref } from "vue";
 
 defineProps<{
-  list: never[];
+  list: any[];
 }>();
 const selected = ref<number>(0);
 </script>
 
 <template>
   <div class="flex w-full flex-col sm:flex-row">
-    <div class="flex flex-row overflow-x-auto sm:w-max sm:flex-col">
+    <div class="flex flex-none flex-row overflow-x-auto sm:w-max sm:flex-col">
       <button
         v-for="(item, index) in list"
         :key="index"
