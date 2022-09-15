@@ -33,7 +33,7 @@ import highlights from "@/assets/highlights";
             </div>
           </div>
           <p
-            class="bg-background-light/90 my-3 rounded-lg p-5 pl-10 text-right text-blue-200 shadow-lg backdrop-blur-sm"
+            class="bg-background-light/90 my-3 rounded-lg p-8 pl-10 text-right text-blue-200 shadow-lg backdrop-blur-sm"
           >
             <Markdown :component="highlight.content.VueComponent" />
           </p>
