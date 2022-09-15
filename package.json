@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@vueuse/core": "^9.2.0",
+    "@vueuse/head": "^0.7.11",
     "@vueuse/motion": "^2.0.0-beta.12",
     "autoprefixer": "^10.4.10",
     "feather-icons": "^4.29.0",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
+    "vite-imagetools": "^4.0.9",
     "vue": "^3.2.37",
     "vue-feather": "^2.0.0"
   },
@@ -37,6 +39,7 @@
     "vite": "^3.1.0",
     "vite-plugin-git-revision": "^0.1.9",
     "vite-plugin-markdown": "^2.1.0",
+    "vite-plugin-pwa": "^0.12.7",
     "vue-tsc": "^0.40.4"
   }
 }

@@ -39,4 +39,9 @@ declare module "*.md" {
   };
 }
 
+declare module "*&imagetools" {
+  const out;
+  export default out;
+}
+
  const GITVERSION:string

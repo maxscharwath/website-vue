@@ -6,6 +6,19 @@ import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
 import Work from "./components/Work.vue";
 import Navbar from "./components/Navbar.vue";
+import { useHead } from "@vueuse/head";
+
+useHead({
+  title: "Maxime Scharwath",
+  meta: [
+    { name: "description", content: "Maxime Scharwath's personal website" },
+    {
+      name: "keywords",
+      content:
+        "Maxime Scharwath, Software Engineer, Vue.js, TypeScript, Java, Javascript, Node.js, Github, JetBrains",
+    },
+  ],
+});
 </script>
 
 <template>

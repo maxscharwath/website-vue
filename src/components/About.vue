@@ -36,12 +36,12 @@ import Section from "./core/Section.vue";
             class="grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0"
           >
             <img
-              src="@/assets/background.png"
+              src="@/assets/background.png?webp"
               alt=""
               class="absolute h-full w-full scale-105 blur-sm transition-all duration-500 ease-in-out group-hover:scale-110"
             />
             <img
-              src="@/assets/me.png"
+              src="@/assets/me.png?webp"
               alt=""
               class="scale-100 transition-all duration-500 ease-in-out group-hover:scale-110"
             />

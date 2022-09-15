@@ -13,7 +13,7 @@ const selected = ref<number>(0);
       <button
         v-for="(item, index) in list"
         :key="index"
-        class="hover:border-primary border-background-light hover:bg-background-light [&.active]:border-primary [&.active]:text-primary mb-2 flex h-12 items-center whitespace-nowrap border-b-2 px-4 transition duration-150 ease-out sm:mb-0 sm:border-b-0 sm:border-l-2"
+        class="hover:border-primary border-background-light hover:bg-background-light [&.active]:border-primary [&.active]:text-primary mb-2 flex h-12 items-center whitespace-nowrap border-b-2 px-4 transition duration-150 ease-out sm:mb-0 sm:border-b-0 sm:border-l-2 sm:pr-20"
         :class="{ active: index === selected }"
         @click="selected = index"
       >

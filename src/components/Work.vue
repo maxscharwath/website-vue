@@ -49,6 +49,7 @@ import highlights from "../assets/highlights";
             <a
               v-if="highlight.content.attributes.repo"
               :href="highlight.content.attributes.repo"
+              aria-label="Github repository"
               class="hover:text-primary ml-3 text-blue-200"
             >
               <vue-feather type="github" />
@@ -56,6 +57,7 @@ import highlights from "../assets/highlights";
             <a
               v-if="highlight.content.attributes.url"
               :href="highlight.content.attributes.url"
+              aria-label="project url"
               class="hover:text-primary ml-3 text-blue-200"
             >
               <vue-feather type="external-link" />

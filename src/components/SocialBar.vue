@@ -38,7 +38,7 @@ const socials = ref([
         :key="social.name"
         class="hover:text-primary py-2 px-5 text-blue-200 duration-200 ease-in-out hover:translate-y-1 xl:px-0 xl:last:mb-3"
       >
-        <a :href="social.link" target="_blank">
+        <a :href="social.link" target="_blank" :aria-label="social.name">
           <vue-feather :type="social.icon" />
         </a>
       </li>

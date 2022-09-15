@@ -8,3 +8,6 @@ I am currently studying at the **HEIG-VD** in Yverdon-les-Bains, Switzerland. I 
 
 - **Bachelor of Science in Computer Science** (2019 - 2023)
 - Specialization in **Software Engineering**
+- Machine Learning and Data Science
+- Team and Project Management (Agile, Scrum, Kanban)
+- Software Architecture and Design Patterns
