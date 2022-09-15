@@ -11,7 +11,7 @@ import Btn from "./core/Btn.vue";
       My inbox is always open. Whether you have a question or just want to say
       hi, I'll try my best to get back to you!
     </p>
-    <Btn as="a" href="mailto://maxime@scharwath.ch">Say Hello</Btn>
+    <Btn as="a" href="mailto:maxime@scharwath.ch">Say Hello</Btn>
   </Section>
 </template>
 <style lang="scss" scoped></style>

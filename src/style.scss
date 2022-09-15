@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    overscroll-behavior: none;
+}
+
 body {
-    @apply bg-background px-5 sm:px-10 overflow-x-hidden leading-relaxed pb-14 sm:pb-0;
+    @apply bg-background px-5 sm:px-10 overflow-x-hidden leading-relaxed pb-24 sm:pb-0;
     counter-reset: section-counter tab-counter;
+    touch-action: pan-y;
 }
 
 ::selection {
