@@ -1,7 +1,10 @@
 <script setup lang="ts">
-defineProps<{
-  as: string;
-}>();
+defineProps({
+  as: {
+    type: String,
+    default: "div",
+  },
+});
 </script>
 
 <template>

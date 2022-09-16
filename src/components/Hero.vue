@@ -34,7 +34,7 @@ import Btn from "@/components/core/Btn.vue";
       things.
     </p>
     <div v-motion-slide-top :delay="500" class="mt-8">
-      <Btn as="a" href="#contact"> Get In Touch </Btn>
+      <Btn as="router-link" to="#contact">Get In Touch</Btn>
     </div>
   </section>
 </template>

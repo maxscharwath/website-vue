@@ -2,6 +2,7 @@
 import { ref } from "vue";
 
 defineProps<{
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   list: any[];
 }>();
 const selected = ref<number>(0);
@@ -9,7 +10,9 @@ const selected = ref<number>(0);
 
 <template>
   <div class="flex w-full flex-col sm:flex-row">
-    <div class="flex flex-none flex-row overflow-x-auto sm:w-max sm:flex-col">
+    <div
+      class="mb-4 flex flex-none flex-row overflow-x-auto sm:w-max sm:flex-col"
+    >
       <button
         v-for="(item, index) in list"
         :key="index"

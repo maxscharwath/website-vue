@@ -24,12 +24,12 @@ const navLinks = [
           :delay="index * 100"
           class="flex h-full items-center justify-center px-4 font-mono"
         >
-          <a
-            :href="link.href"
+          <router-link
+            :to="link.href"
             class="hover:text-primary text-blue-200 transition duration-300 ease-out"
           >
             {{ link.name }}
-          </a>
+          </router-link>
         </li>
       </ol>
     </nav>

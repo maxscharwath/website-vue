@@ -28,15 +28,11 @@ declare module "*.md" {
     components: Record<string, Component>
   ) => ComponentOptions;
 
-  // Modify below per your usage
-  export {
+  const Markdown = {
     attributes,
-    toc,
-    html,
-    ReactComponent,
     VueComponent,
-    VueComponentWith,
   };
+  export default Markdown;
 }
 
 declare module "*&imagetools" {

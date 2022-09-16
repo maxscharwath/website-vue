@@ -12,7 +12,7 @@ import highlights from "@/assets/highlights";
       <li
         v-for="(highlight, index) in highlights"
         :key="index"
-        class="mb-20 grid-cols-12 sm:grid"
+        class="mb-20 grid-cols-12 last:mb-0 sm:grid"
       >
         <div class="cover">
           <img :src="highlight.cover" alt="" class="rounded-lg" />
@@ -27,11 +27,12 @@ import highlights from "@/assets/highlights";
             </div>
           </div>
           <p
-            class="bg-background-light/90 my-3 overflow-hidden rounded-lg p-8 pl-10 text-blue-200 shadow-lg backdrop-blur-sm"
+            class="bg-background-light/90 relative my-3 overflow-hidden rounded-lg p-8 pl-10 text-blue-200 shadow-lg backdrop-blur-sm"
           >
-          <div
+            <span
               class="absolute top-0 left-0 -z-10 h-full w-full scale-105 bg-cover bg-center opacity-25 blur-sm brightness-50 sm:hidden"
-              :style="{backgroundImage:`url(${highlight.cover})`}"></div>
+              :style="{ backgroundImage: `url(${highlight.cover})` }"
+            ></span>
             <Markdown :component="highlight.content.VueComponent" />
           </p>
           <ul class="mb-3 max-w-md">
