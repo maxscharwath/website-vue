@@ -14,10 +14,10 @@ import highlights from "@/assets/highlights";
         :key="index"
         class="mb-20 grid-cols-12 last:mb-0 sm:grid"
       >
-        <div class="cover">
+        <div v-motion-slide-visible-once-right class="cover">
           <img :src="highlight.cover" alt="" class="rounded-lg" />
         </div>
-        <div class="content">
+        <div v-motion-slide-visible-once-left class="content">
           <div>
             <h3 class="text-heading-3 font-bold text-blue-200">
               {{ highlight.content.attributes.title }}

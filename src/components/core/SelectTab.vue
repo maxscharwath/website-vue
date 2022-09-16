@@ -34,11 +34,12 @@ const selected = ref<number>(0);
 <style scoped lang="scss">
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+  transform: translateX(-10px);
 }
 </style>
