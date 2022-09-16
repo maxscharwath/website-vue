@@ -29,11 +29,9 @@ import highlights from "@/assets/highlights";
           <p
             class="bg-background-light/90 my-3 overflow-hidden rounded-lg p-8 pl-10 text-blue-200 shadow-lg backdrop-blur-sm"
           >
-            <img
-              :src="highlight.cover"
-              alt=""
-              class="absolute top-0 left-0 -z-10 h-full w-full scale-105 object-cover opacity-25 blur-sm brightness-50 sm:hidden"
-            />
+          <div
+              class="absolute top-0 left-0 -z-10 h-full w-full scale-105 bg-cover bg-center opacity-25 blur-sm brightness-50 sm:hidden"
+              :style="{backgroundImage:`url(${highlight.cover})`}"></div>
             <Markdown :component="highlight.content.VueComponent" />
           </p>
           <ul class="mb-3 max-w-md">
