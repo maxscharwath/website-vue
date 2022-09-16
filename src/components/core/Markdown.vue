@@ -34,7 +34,7 @@ defineProps<{
   @apply text-heading-4 font-bold text-blue-200;
 }
 ::v-deep(p) {
-  @apply mb-3 last:mb-0 text-blue-300;
+  @apply mb-3 last:mb-0 text-blue-200;
 }
 ::v-deep(a) {
   @apply relative text-primary inline-block font-medium;

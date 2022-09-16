@@ -12,19 +12,13 @@ import highlights from "@/assets/highlights";
       <li
         v-for="(highlight, index) in highlights"
         :key="index"
-        class="mb-20 grid grid-cols-12"
+        class="mb-20 grid-cols-12 sm:grid"
       >
-        <div
-          class="col-[1_/_8] flex items-center"
-          style="grid-area: 1 / 1 / -1 / 7"
-        >
+        <div class="cover">
           <img :src="highlight.cover" alt="" class="rounded-lg" />
         </div>
-        <div
-          class="col-[7_/_-1] flex flex-col items-end"
-          style="grid-area: 1 / 6 / -1 / -1"
-        >
-          <div class="text-right">
+        <div class="content">
+          <div>
             <h3 class="text-heading-3 font-bold text-blue-200">
               {{ highlight.content.attributes.title }}
             </h3>
@@ -33,15 +27,20 @@ import highlights from "@/assets/highlights";
             </div>
           </div>
           <p
-            class="bg-background-light/90 my-3 rounded-lg p-8 pl-10 text-right text-blue-200 shadow-lg backdrop-blur-sm"
+            class="bg-background-light/90 my-3 overflow-hidden rounded-lg p-8 pl-10 text-blue-200 shadow-lg backdrop-blur-sm"
           >
+            <img
+              :src="highlight.cover"
+              alt=""
+              class="absolute top-0 left-0 -z-10 h-full w-full scale-105 object-cover opacity-25 blur-sm brightness-50 sm:hidden"
+            />
             <Markdown :component="highlight.content.VueComponent" />
           </p>
-          <ul class="mb-3">
+          <ul class="mb-3 max-w-md">
             <li
               v-for="technology in highlight.content.attributes.technologies"
               :key="technology"
-              class="text-primary mx-2 inline-block font-mono text-sm"
+              class="text-primary mx-2 inline-block max-w-sm font-mono"
             >
               {{ technology }}
             </li>
@@ -69,4 +68,24 @@ import highlights from "@/assets/highlights";
     </ul>
   </Section>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+li {
+  .cover {
+    @apply col-[1_/_8] items-center hidden sm:flex;
+    grid-area: 1 / 1 / -1 / 7;
+  }
+  .content {
+    @apply col-[7_/_-1] flex flex-col items-end text-right;
+    grid-area: 1 / 6 / -1 / -1;
+  }
+  &:nth-child(odd) {
+    .cover {
+      grid-area: 1 / 6 / -1 / -1;
+    }
+    .content {
+      @apply items-start text-left;
+      grid-area: 1 / 1 / -1 / 7;
+    }
+  }
+}
+</style>
