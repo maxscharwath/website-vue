@@ -1,5 +1,7 @@
-import StudyStorm from "./StudyStorm";
-import LavauxLadiesOpen from "./LavauxLadiesOpen";
-import HEIGREPO from "@/assets/highlights/HEIG-REPO";
+import en from "./en";
+import fr from "./fr";
 
-export default [StudyStorm, LavauxLadiesOpen, HEIGREPO];
+export default {
+  en,
+  fr,
+};

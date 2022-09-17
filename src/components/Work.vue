@@ -3,14 +3,25 @@ import Section from "@/components/core/Section.vue";
 import SectionTitle from "@/components/core/SectionTitle.vue";
 import Markdown from "@/components/core/Markdown.vue";
 import highlights from "@/assets/highlights";
+
+import { useI18n } from "vue-i18n";
+
+const { t, locale } = useI18n();
 </script>
+
+<i18n lang="yaml">
+en:
+  title: Some Projects I've Built
+fr:
+  title: Quelques projets
+</i18n>
 
 <template>
   <Section>
-    <SectionTitle>Some Projects I've Built</SectionTitle>
+    <SectionTitle>{{ t("title") }}</SectionTitle>
     <ul>
       <li
-        v-for="(highlight, index) in highlights"
+        v-for="(highlight, index) in highlights[locale]"
         :key="index"
         class="mb-20 grid-cols-12 last:mb-0 sm:grid"
       >

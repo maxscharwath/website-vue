@@ -1,14 +1,29 @@
 <script setup lang="ts">
 import { useWindowScroll } from "@vueuse/core";
+import { useI18n } from "vue-i18n";
 
+const { t } = useI18n();
 const { y } = useWindowScroll();
 const navLinks = [
-  { name: "About", href: "#about" },
-  { name: "Education", href: "#education" },
-  { name: "Work", href: "#work" },
-  { name: "Contact", href: "#contact" },
+  { name: "about", href: "#about" },
+  { name: "education", href: "#education" },
+  { name: "work", href: "#work" },
+  { name: "contact", href: "#contact" },
 ];
 </script>
+
+<i18n lang="yaml">
+en:
+  about: About
+  education: Education
+  work: Work
+  contact: Contact
+fr:
+  about: Info
+  education: Études
+  work: Travaux
+  contact: Contact
+</i18n>
 
 <template>
   <header
@@ -28,7 +43,7 @@ const navLinks = [
             :to="link.href"
             class="hover:text-primary text-blue-200 transition duration-300 ease-out"
           >
-            {{ link.name }}
+            {{ t(link.name) }}
           </router-link>
         </li>
       </ol>

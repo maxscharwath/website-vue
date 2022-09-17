@@ -7,6 +7,10 @@ const gitRevision = GITVERSION;
   <footer class="min-h-10 flex flex-col justify-center p-5">
     <div class="flex flex-col items-center justify-center">
       <social-bar />
+      <select v-model="$i18n.locale">
+        <option>en</option>
+        <option>fr</option>
+      </select>
       <div class="text-primary font-mono">
         Made with <span class="animate-pulse">❤️</span> by Maxime Scharwath
       </div>

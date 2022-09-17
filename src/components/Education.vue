@@ -4,12 +4,22 @@ import SectionTitle from "@/components/core/SectionTitle.vue";
 import SelectTab from "@/components/core/SelectTab.vue";
 import Markdown from "@/components/core/Markdown.vue";
 import educations from "@/assets/educations";
+import { useI18n } from "vue-i18n";
+
+const { t, locale } = useI18n();
 </script>
+
+<i18n lang="yaml">
+en:
+  title: Education
+fr:
+  title: Éducation
+</i18n>
 
 <template>
   <Section class="text-blue-300">
-    <SectionTitle>Education</SectionTitle>
-    <SelectTab :list="educations">
+    <SectionTitle>{{ t("title") }}</SectionTitle>
+    <SelectTab :list="educations[locale]">
       <template #tab="{ item }">
         {{ item.attributes.title }}
       </template>

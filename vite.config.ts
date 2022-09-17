@@ -4,6 +4,7 @@ import { Mode, plugin } from "vite-plugin-markdown";
 import GitRevision from "vite-plugin-git-revision";
 import { imagetools } from "vite-imagetools";
 import { VitePWA } from "vite-plugin-pwa";
+import vueI18n from "@intlify/vite-plugin-vue-i18n";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 const GitRevisionPlugin = GitRevision.default;
@@ -11,6 +12,7 @@ const GitRevisionPlugin = GitRevision.default;
 export default defineConfig({
   plugins: [
     vue(),
+    vueI18n({}),
     plugin({
       mode: [Mode.VUE],
     }),
