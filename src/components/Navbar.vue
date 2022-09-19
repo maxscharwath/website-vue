@@ -21,7 +21,7 @@ en:
 fr:
   about: Info
   education: Études
-  work: Travaux
+  work: Projets
   contact: Contact
 </i18n>
 
