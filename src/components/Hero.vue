@@ -17,7 +17,7 @@ en:
 fr:
   uptitle: Salut, je m'appelle
   title: Maxime Scharwath
-  subtitle: Je réalises des trucs cool.
+  subtitle: Je réalise des trucs cool.
   text: >-
     Hello! Je suis Maxime, un ingénieur logiciel basé à Lausanne, en Suisse.
     J’aime construire des choses, hacker des trucs et apprendre de nouvelles choses.
