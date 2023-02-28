@@ -9,26 +9,22 @@ const { t } = useI18n();
 en:
   title: About Me
   content: >-
-    Hello there! I’m Maxime, a software engineer based in Lausanne, Switzerland.
-    I enjoy building things, hacking stuff and learning new things.
-
-
-    My passion for programming started back in 2009, and more than a decade later,
-    I’m still as passionate as ever. I love to learn new things, and I’m always looking for new challenges.
-    I’m also a big fan of Vue.js and TypeScript.
+    Hello There! I am Maxime, a software engineer based in Lausanne, Switzerland.
+    I love building innovative projects, finding creative solutions, and tackling complex problems.
+    Since I began programming in 2009, I have been constantly seeking new challenges to improve my skills.
+    I am also passionate about emerging technologies and enjoy experimenting with new technologies.
+    Outside of work, I am an active contributor to open source projects on Github, such as ThreeJs and others, and I appreciate the opportunity to collaborate with developers from around the world.
 
 
     Here are a few technologies I like to work with :
 fr:
   title: À propos de moi
   content: >-
-    Hello! Je suis Maxime, un ingénieur logiciel basé à Lausanne, en Suisse.
-    J’aime réaliser des choses, hacker des trucs et apprendre de nouvelles choses.
-
-
-    Ma passion pour la programmation a débuté en 2009, et plus de dix ans plus tard, je suis toujours aussi passionné.
-    J'adore apprendre de nouvelles choses, et je suis toujours à la recherche de nouveaux défis.
-    Je suis également un grand fan de Vue.js et de TypeScript.
+    Hello ! Je suis Maxime, un ingénieur logiciel basé à Lausanne, en Suisse.
+    J'aime réaliser des projets innovants, trouver des solutions créatives et résoudre des problèmes complexes.
+    Depuis que j'ai commencé à programmer en 2009, je suis constamment à la recherche de nouveaux défis pour améliorer mes compétences.
+    Je suis également un passionné de technologies émergentes et j'aime expérimenter avec de nouvelles technologies.
+    En plus de mes activités, je suis un contributeur actif à des projets open source sur Github, tel que ThreeJs, et j'apprécie l'opportunité de travailler avec des développeurs du monde entier.
 
 
     Voici quelques technologies avec lesquelles j'aime travailler :
@@ -44,6 +40,7 @@ fr:
           <li>TypeScript</li>
           <li>Javascript (ES6+)</li>
           <li>Vue.js</li>
+          <li>React</li>
           <li>Node.js</li>
           <li>Java</li>
           <li>Github</li>
