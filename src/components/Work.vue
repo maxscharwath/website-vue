@@ -65,6 +65,14 @@ fr:
               <vue-feather type="github" />
             </a>
             <a
+                v-if="highlight.content.attributes.npm"
+                :href="highlight.content.attributes.npm"
+                aria-label="NPM package"
+                class="hover:text-primary ml-3 text-blue-200"
+            >
+              <vue-feather type="package" />
+            </a>
+            <a
               v-if="highlight.content.attributes.url"
               :href="highlight.content.attributes.url"
               aria-label="project url"
